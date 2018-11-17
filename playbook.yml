@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  become: yes
+  become_user: root
+  roles:
+    - role: run_updates
+    - role: install_docker
+    - role: install_jenkins
